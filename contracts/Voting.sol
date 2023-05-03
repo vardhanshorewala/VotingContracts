@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-contract Voting {
+contract Poll {
     string public proposal;
     bool[] public options;
     uint public voteCount;
@@ -16,15 +16,19 @@ contract Voting {
     event VoteCast(address voter);
     event VotingFinished();
 
-    constructor(string memory _proposal, bool[] memory _options) {
+    constructor(string memory _proposal) {
         proposal = _proposal;
-        options = _options;
+        options = new bool[](2);
         voteCount = 0;
     }
 
     function castVote(uint256 _optionIndex) public {
         require(!voters[msg.sender].hasVoted, "You have already voted.");
         require(_optionIndex < options.length, "Invalid option index.");
+        require(
+            _optionIndex == 0 || _optionIndex == 1,
+            "Option index can only be 0 or 1."
+        );
         voters[msg.sender].hasVoted = true;
         voters[msg.sender].vote = _optionIndex;
         holders[voteCount] = msg.sender;

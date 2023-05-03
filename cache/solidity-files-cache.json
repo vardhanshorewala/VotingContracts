@@ -1,8 +1,43 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/vardhanshorewala/Desktop/Blockchain @ Berk/Voting/contracts/Lock.sol": {
-      "lastModificationDate": 1683081093638,
+    "/Users/vardhanshorewala/Desktop/Blockchain @ Berk/VotingContracts/contracts/Factory.sol": {
+      "lastModificationDate": 1683090387525,
+      "contentHash": "68da16d6dd568362b6d7c08dfb40078f",
+      "sourceName": "contracts/Factory.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PollFactory"
+      ]
+    },
+    "/Users/vardhanshorewala/Desktop/Blockchain @ Berk/VotingContracts/contracts/Lock.sol": {
+      "lastModificationDate": 1683082149712,
       "contentHash": "ae66265769cc28ebdaa34881df95bc5e",
       "sourceName": "contracts/Lock.sol",
       "solcConfig": {
@@ -36,9 +71,9 @@
         "Lock"
       ]
     },
-    "/Users/vardhanshorewala/Desktop/Blockchain @ Berk/Voting/contracts/Voting.sol": {
-      "lastModificationDate": 1683081642278,
-      "contentHash": "1f45195b7c998bfeab0641289f3ca116",
+    "/Users/vardhanshorewala/Desktop/Blockchain @ Berk/VotingContracts/contracts/Voting.sol": {
+      "lastModificationDate": 1683088086988,
+      "contentHash": "96e67c13a7ff5950868df0267ee8883f",
       "sourceName": "contracts/Voting.sol",
       "solcConfig": {
         "version": "0.8.18",
@@ -68,7 +103,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "Voting"
+        "Poll"
       ]
     }
   }
